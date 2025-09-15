@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: ingre_note_design_system
+dependency_overrides:
+  ingre_note_design_system:
+    path: ../../packages/ingre_note_design_system

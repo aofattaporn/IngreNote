@@ -1,0 +1,5 @@
+name: ingre_note_app_workspace
+
+packages:
+  - apps/**
+  - packages/**
