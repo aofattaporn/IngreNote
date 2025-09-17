@@ -34,7 +34,7 @@ class INTextField extends StatelessWidget {
       keyboardType: keyboardType,
       maxLines: maxLines,
       style: INTypos.bodyMedium.copyWith(
-        color: enabled ? INColors.dark : INColors.lightGrey,
+        color: enabled ? INColors.dark : INColors.grey,
       ),
       decoration: InputDecoration(
         labelText: label,
@@ -48,11 +48,11 @@ class INTextField extends StatelessWidget {
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(INRadius.md),
-          borderSide: BorderSide(color: INColors.lightGrey),
+          borderSide: BorderSide(color: INColors.grey),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(INRadius.md),
-          borderSide: BorderSide(color: INColors.lightGrey),
+          borderSide: BorderSide(color: INColors.grey),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(INRadius.md),

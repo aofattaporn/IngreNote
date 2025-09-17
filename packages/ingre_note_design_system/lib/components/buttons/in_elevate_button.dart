@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ingre_note_design_system/components/progress/in_progress.dart';
 import 'package:ingre_note_design_system/tokens/colors.dart';
 
-class INButton extends StatelessWidget {
-  const INButton({
+class INElevatedButton extends StatelessWidget {
+  const INElevatedButton({
     super.key,
     required this.label,
     required this.onPressed,
@@ -23,6 +23,9 @@ class INButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: isEnabled ? INColors.primary : INColors.lightGrey,
         foregroundColor: INColors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(100.0),
+        ),
       ),
       child:
           isLoading

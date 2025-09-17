@@ -36,21 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          spacing: INSpace.md,
-          children: <Widget>[
-            Text(
-              'Design Systdsdfsfsem',
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            INButton(label: "dddddddddddddddddd", onPressed: () {}),
-            INProgressBar(),
-            INTextField(controller: controller, hint: "Hint", label: "Label"),
-          ],
-        ),
-      ),
+      body: Center(child: INSpecDesignSystem()),
     );
   }
 }

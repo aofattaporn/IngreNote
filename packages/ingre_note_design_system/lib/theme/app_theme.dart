@@ -12,8 +12,6 @@ class INTheme {
         error: INColors.error,
         secondary: INColors.dark,
         tertiary: INColors.black,
-
-        background: INColors.lightGrey,
       ),
       scaffoldBackgroundColor: INColors.white,
       textTheme: ingreNoteTyposTheme.textTheme,
