@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ingre_note_design_system/components/progress/in_progress.dart';
 import 'package:ingre_note_design_system/tokens/colors.dart';
-import 'package:ingre_note_design_system/tokens/typography.dart';
 
 class INButton extends StatelessWidget {
   const INButton({
@@ -31,14 +31,13 @@ class INButton extends StatelessWidget {
               ? const SizedBox(
                 width: 16.0,
                 height: 16.0,
-                child: CircularProgressIndicator(
-                  strokeWidth: 2.0,
-                  valueColor: AlwaysStoppedAnimation<Color>(INColors.white),
-                ),
+                child: INProgressBar(),
               )
               : Text(
                 label,
-                style: BWTypos.body.copyWith(color: INColors.white),
+                style: Theme.of(
+                  context,
+                ).textTheme.bodyMedium!.copyWith(color: INColors.white),
               ),
     );
   }

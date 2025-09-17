@@ -9,16 +9,14 @@ class INTheme {
       colorScheme: ColorScheme.fromSeed(
         seedColor: INColors.primary,
         primary: INColors.primary,
-        error: INColors.red,
+        error: INColors.error,
+        secondary: INColors.dark,
+        tertiary: INColors.black,
+
         background: INColors.lightGrey,
       ),
       scaffoldBackgroundColor: INColors.white,
-      textTheme: base.textTheme.copyWith(
-        titleLarge: BWTypos.title,
-        titleMedium: BWTypos.subtitle,
-        bodyMedium: BWTypos.body,
-        labelLarge: BWTypos.label,
-      ),
+      textTheme: ingreNoteTyposTheme.textTheme,
     );
   }
 }

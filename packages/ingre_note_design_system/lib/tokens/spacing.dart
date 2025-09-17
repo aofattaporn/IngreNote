@@ -1,4 +1,4 @@
-class BWSpace {
+class INSpace {
   static const xxs = 4.0;
   static const xs = 8.0;
   static const sm = 12.0;

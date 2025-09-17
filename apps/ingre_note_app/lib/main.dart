@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ingre_note_design_system/components/buttons/bw_button.dart';
-import 'package:ingre_note_design_system/theme/app_theme.dart';
+import 'package:ingre_note_design_system/exporter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +28,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  TextEditingController controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,10 +39,15 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          spacing: INSpace.md,
           children: <Widget>[
-            const Text('Design System'),
-            const SizedBox(height: 20),
+            Text(
+              'Design Systdsdfsfsem',
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
             INButton(label: "dddddddddddddddddd", onPressed: () {}),
+            INProgressBar(),
+            INTextField(controller: controller, hint: "Hint", label: "Label"),
           ],
         ),
       ),
