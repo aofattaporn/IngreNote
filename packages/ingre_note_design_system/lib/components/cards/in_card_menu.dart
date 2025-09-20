@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ingre_note_design_system/specs/spec_design_system_card_menu.dart';
+import 'package:ingre_note_design_system/components/buttons/in_button.dart';
+import 'package:ingre_note_design_system/mocks/in_card_menu_mock.dart';
 import 'package:ingre_note_design_system/tokens/colors.dart';
 import 'package:ingre_note_design_system/tokens/radius.dart';
 import 'package:ingre_note_design_system/tokens/spacing.dart';
@@ -143,13 +144,15 @@ class _IngredientPanel extends StatelessWidget {
         children: [
           Icon(Icons.receipt_long_outlined, size: 36, color: iconColor),
           const SizedBox(height: INSpace.xs),
-          Text(
-            "Ingredient",
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              fontWeight: FontWeight.bold,
-              color: iconColor,
-            ),
-          ),
+          isGenerated
+              ? Text(
+                "Ingredient",
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: iconColor,
+                ),
+              )
+              : INButton(label: "Add", onPressed: () {}),
         ],
       ),
     );
